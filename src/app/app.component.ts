@@ -12,12 +12,11 @@ import { ComunicatorComponent } from './comunicator/comunicator.component';
 import { TitleService } from './title.service';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink, ComunicatorComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-root',
+    imports: [RouterOutlet, RouterLink, ComunicatorComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnDestroy {
   titleService = inject(TitleService);
