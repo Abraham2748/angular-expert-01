@@ -1,4 +1,8 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import {
+  ApplicationConfig,
+  provideExperimentalZonelessChangeDetection,
+  provideZoneChangeDetection,
+} from '@angular/core';
 import {
   PreloadAllModules,
   provideRouter,
@@ -11,7 +15,7 @@ import { MyCustomPreloading } from './custom-preloading';
 export const appConfig: ApplicationConfig = {
   providers: [
     MyCustomPreloading,
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideExperimentalZonelessChangeDetection(),
     provideRouter(routes, withPreloading(MyCustomPreloading)),
   ],
 };

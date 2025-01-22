@@ -178,7 +178,7 @@
             "outputPath": "dist/edition-2025-01",
             "index": "projects/edition-2025-01/src/index.html",
             "browser": "projects/edition-2025-01/src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [],
             "tsConfig": "projects/edition-2025-01/tsconfig.app.json",
             "assets": [
               {
