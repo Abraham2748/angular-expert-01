@@ -1,1 +1,13 @@
 <p>latam works!</p>
+
+<app-argentina></app-argentina>
+<app-ecuador></app-ecuador>
+@defer (on viewport) {
+<app-peru></app-peru>
+} @placeholder {
+<p>Componente Perú aun no carga</p>
+} @loading (minimum 1s) {
+<p>Componente Perú cargando...</p>
+} @error {
+<p>Componente Perú falló al cargar</p>
+}
