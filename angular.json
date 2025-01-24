@@ -187,7 +187,8 @@
               }
             ],
             "styles": ["projects/edition-2025-01/src/styles.css"],
-            "scripts": []
+            "scripts": [],
+            "webWorkerTsConfig": "projects/edition-2025-01/tsconfig.worker.json"
           },
           "configurations": {
             "production": {
@@ -240,7 +241,8 @@
               }
             ],
             "styles": ["projects/edition-2025-01/src/styles.css"],
-            "scripts": []
+            "scripts": [],
+            "webWorkerTsConfig": "projects/edition-2025-01/tsconfig.worker.json"
           }
         }
       }
